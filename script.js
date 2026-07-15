@@ -1,6 +1,6 @@
-// Food pairs
+// Food pairs - Indian Food
 const foodPairs = [
-    '🍕', '🍔', '🍟', '🌮', '🍜', '🍱', '🍰', '🍎'
+    '🍛', '🥘', '🥙', '🌶️', '🍲', '🥒', '🍚', '🧆'
 ];
 
 // Game variables
