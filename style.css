@@ -68,9 +68,30 @@ h1 {
 
 .card img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    max-height: calc(100% - 20px);
     object-fit: cover;
     border-radius: 8px;
+}
+
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.card .caption {
+    margin-top: 6px;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
 }
 
 .card-back {

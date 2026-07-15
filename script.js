@@ -62,7 +62,12 @@ function flipCard(e) {
     const foodName = clickedCard.getAttribute('data-food-name');
     const foodImage = clickedCard.getAttribute('data-image');
 
-    clickedCard.innerHTML = `<img src="${foodImage}" alt="${foodName}" />`;
+    clickedCard.innerHTML = `
+        <div class="card-content">
+            <img src="${foodImage}" alt="${foodName}" />
+            <div class="caption">${foodName}</div>
+        </div>
+    `;
     clickedCard.classList.add('flipped');
 
     if (!firstCard) {
