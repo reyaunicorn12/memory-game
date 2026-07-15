@@ -106,7 +106,7 @@ h1 {
 
 .card.flipped {
     background: linear-gradient(145deg, #f5af19, #f12711);
-    transform: rotateY(180deg);
+    transform: none;
 }
 
 .card.matched {
