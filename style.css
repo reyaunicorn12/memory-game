@@ -51,18 +51,31 @@ h1 {
 }
 
 .card {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     background: linear-gradient(145deg, #667eea, #764ba2);
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 2rem;
+    padding: 6px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card-back {
+    font-size: 2rem;
+    color: white;
 }
 
 .card:hover:not(.matched) {
